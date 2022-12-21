@@ -102,19 +102,7 @@ https://templatemo.com/tm-552-video-catalog
                                 <h4>Composição, Produção, Voz e Guitarras</h4>
                                 <h5>(Single, 2022)</h5>    
                             </div>
-                            <audio id="fado">
-                                <source src="media/fado.mp3" type="audio/mp3">
-                            </audio>
-                            <script>
-                                
-                                player1.onclick = function(){
-                                    if(fadosong.paused){
-                                        fadosong.play();
-                                    }else{
-                                        fadosong.pause();
-                                    }
-                                }
-                            </script>
+                            
                         </div>
                         <!--display das coverarts + text over images -Album Bang-->
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
@@ -124,64 +112,91 @@ https://templatemo.com/tm-552-video-catalog
                                 <h4>Composição, Produção, Voz e Guitarras</h4>
                                 <h5>(Álbum, 2022)</h5>    
                             </div>
-                            <audio id="forever">
-                                <source src="media/forever.mp3" type="audio/mp3">
-                            </audio>
-                            <script>
-                                var foreversong = document.getElementById("forever");
-                                var player2 =  document.getElementById("player2");
-                                player2.onclick = function(){
-                                    if(foreversong.paused){
-                                        foreversong.play();
-                                    }else{
-                                        foreversong.pause();
-                                    }
-                                }
-                            </script>
                         </div>
+                        <!--display das coverarts + text over images -Album O Marta-->
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                             <div class="position-relative textWithBlurredBg">
-                                <img src="img/coverartfado.jpg" alt="Image" id="player1" class="img-fluid tm-catalog-item-img">    
-                                <h3>O Marta-Fado à Portuguesa</h3>
-                                <h4>Composição, Produção, Voz e Guitarras</h4>   
+                                <img src="img/coverartmoca.jpg" alt="Image" id="player3" class="img-fluid tm-catalog-item-img">    
+                                <h3>O Marta-Ó Moça! É Folclore</h3>
+                                <h4>Composição, Produção, Voz e Guitarras</h4> 
+                                <h5>(Álbum, 2022)</h5>  
                             </div>
-                            <audio id="fado">
-                                <source src="media/fado.mp3" type="audio/mp3">
-                            </audio>
-                            <script>
-                                var fadosong = document.getElementById("fado");
-                                var player1 =  document.getElementById("player1");
-                                player1.onclick = function(){
-                                    if(fadosong.paused){
-                                        fadosong.play();
-                                    }else{
-                                        fadosong.pause();
-                                    }
-                                }
-                            </script>
                         </div>
+                        <!--display das coverarts + text over images -Single A Mulher Beirã-->
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                             <div class="position-relative textWithBlurredBg">
-                                <img src="img/coverartfado.jpg" alt="Image" id="player1" class="img-fluid tm-catalog-item-img">    
-                                <h3>O Marta-Fado à Portuguesa</h3>
-                                <h4>Composição, Produção, Voz e Guitarras</h4>   
+                                <img src="img/coverartmulher.jpg" alt="Image" id="player4" class="img-fluid tm-catalog-item-img">    
+                                <h3>O Marta-A Mulher Beirã</h3>
+                                <h4>Composição, Produção, Voz e Guitarras</h4>
+                                <h5>(Single, 2022)</h5>    
                             </div>
-                            <audio id="fado">
-                                <source src="media/fado.mp3" type="audio/mp3">
-                            </audio>
-                            <script>
-                                var fadosong = document.getElementById("fado");
-                                var player1 =  document.getElementById("player1");
-                                player1.onclick = function(){
-                                    if(fadosong.paused){
-                                        fadosong.play();
-                                    }else{
-                                        fadosong.pause();
-                                    }
-                                }
-                            </script>
+
+                            
                         </div>
-                        
+                        <!--audios para portefolio musical-->
+                        <audio id="fado">
+                            <source src="media/fado.mp3" type="audio/mp3">
+                        </audio>
+                        <audio id="forever">
+                            <source src="media/forever.mp3" type="audio/mp3">
+                        </audio>
+                        <audio id="picolo">
+                            <source src="media/picolo.mp3" type="audio/mp3">
+                        </audio>
+                        <audio id="mulher">
+                            <source src="media/mulherbeira.mp3" type="audio/mp3">
+                        </audio>
+                        <!-- script para play e pausa-->
+                        <script>
+                            var fadosong = document.getElementById("fado");
+                            var player1 =  document.getElementById("player1");
+                            var foreversong = document.getElementById("forever");
+                            var player2 =  document.getElementById("player2");
+                            var picolosong = document.getElementById("picolo");
+                            var player3 =  document.getElementById("player3");
+                            var mulhersong = document.getElementById("mulher");
+                            var player4 =  document.getElementById("player4");
+                            player1.onclick = function(){
+                                if(fadosong.paused){
+                                    fadosong.play();
+                                    foreversong.pause();
+                                    picolosong.pause();
+                                    mulhersong.pause();
+                                }else{
+                                    fadosong.pause();
+                                }
+                            }
+                            player2.onclick = function(){
+                                if(foreversong.paused){
+                                    foreversong.play();
+                                    fadosong.pause();
+                                    picolosong.pause();
+                                    mulhersong.pause();
+                                }else{
+                                    foreversong.pause();
+                                }
+                            }
+                            player3.onclick = function(){
+                                if(picolosong.paused){
+                                    picolosong.play();
+                                    foreversong.pause();
+                                    fadosong.pause();
+                                    mulhersong.pause();
+                                }else{
+                                    picolosong.pause();
+                                }
+                            }
+                            player4.onclick = function(){
+                                if(mulhersong.paused){
+                                    mulhersong.play();
+                                    foreversong.pause();
+                                    fadosong.pause();
+                                    picolosong.pause();
+                                }else{
+                                    mulhersong.pause();
+                                }
+                            }
+                        </script>
                     </div>
                     
                 
