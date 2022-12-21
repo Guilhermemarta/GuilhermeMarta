@@ -77,7 +77,6 @@ https://templatemo.com/tm-552-video-catalog
                 </div>
             </div>
         </div>
-
         <div class="container-fluid">
             <div id="content" class="mx-auto tm-content-container">
                 <main>
@@ -94,18 +93,97 @@ https://templatemo.com/tm-552-video-catalog
                             </div>        
                         </div>
                     </div>
-                    
-                    <!--display das coverarts + text over images-->
+                    <!--display das coverarts + text over images -fado à portuguesa-->
                     <div class="row tm-catalog-item-list">
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                             <div class="position-relative textWithBlurredBg">
-                                <img src="img/coverartfado.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+                                <img src="img/coverartfado.jpg" alt="Image" id="player1" class="img-fluid tm-catalog-item-img">    
+                                <h3>O Marta-Fado à Portuguesa</h3>
+                                <h4>Composição, Produção, Voz e Guitarras</h4>
+                                <h5>(Single, 2022)</h5>    
+                            </div>
+                            <audio id="fado">
+                                <source src="media/fado.mp3" type="audio/mp3">
+                            </audio>
+                            <script>
                                 
-                                <h2>O Marta-Fado à Portuguesa</h2>
-                                <h3>Composição, Produção, Voz e Guitarras</h3>
-                            </div>    
+                                player1.onclick = function(){
+                                    if(fadosong.paused){
+                                        fadosong.play();
+                                    }else{
+                                        fadosong.pause();
+                                    }
+                                }
+                            </script>
                         </div>
+                        <!--display das coverarts + text over images -Album Bang-->
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative textWithBlurredBg">
+                                <img src="img/bangalbum.jpg" alt="Image" id="player2" class="img-fluid tm-catalog-item-img">    
+                                <h3>Bang Avenue-ALBUM</h3>
+                                <h4>Composição, Produção, Voz e Guitarras</h4>
+                                <h5>(Álbum, 2022)</h5>    
+                            </div>
+                            <audio id="forever">
+                                <source src="media/forever.mp3" type="audio/mp3">
+                            </audio>
+                            <script>
+                                var foreversong = document.getElementById("forever");
+                                var player2 =  document.getElementById("player2");
+                                player2.onclick = function(){
+                                    if(foreversong.paused){
+                                        foreversong.play();
+                                    }else{
+                                        foreversong.pause();
+                                    }
+                                }
+                            </script>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative textWithBlurredBg">
+                                <img src="img/coverartfado.jpg" alt="Image" id="player1" class="img-fluid tm-catalog-item-img">    
+                                <h3>O Marta-Fado à Portuguesa</h3>
+                                <h4>Composição, Produção, Voz e Guitarras</h4>   
+                            </div>
+                            <audio id="fado">
+                                <source src="media/fado.mp3" type="audio/mp3">
+                            </audio>
+                            <script>
+                                var fadosong = document.getElementById("fado");
+                                var player1 =  document.getElementById("player1");
+                                player1.onclick = function(){
+                                    if(fadosong.paused){
+                                        fadosong.play();
+                                    }else{
+                                        fadosong.pause();
+                                    }
+                                }
+                            </script>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative textWithBlurredBg">
+                                <img src="img/coverartfado.jpg" alt="Image" id="player1" class="img-fluid tm-catalog-item-img">    
+                                <h3>O Marta-Fado à Portuguesa</h3>
+                                <h4>Composição, Produção, Voz e Guitarras</h4>   
+                            </div>
+                            <audio id="fado">
+                                <source src="media/fado.mp3" type="audio/mp3">
+                            </audio>
+                            <script>
+                                var fadosong = document.getElementById("fado");
+                                var player1 =  document.getElementById("player1");
+                                player1.onclick = function(){
+                                    if(fadosong.paused){
+                                        fadosong.play();
+                                    }else{
+                                        fadosong.pause();
+                                    }
+                                }
+                            </script>
+                        </div>
+                        
                     </div>
+                    
                 
                     <!--<div class="row tm-catalog-item-list">
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
