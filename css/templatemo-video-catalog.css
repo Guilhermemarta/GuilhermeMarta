@@ -342,22 +342,33 @@ h2, p { color: #666666; }
     opacity:0;
     transition:.3s;
   }
-  
+  .textWithBlurredBg h2{
+    top:35%;
+    font-size: 20px;
+    color: rgb(240, 213, 90)
+    
+  }
   .textWithBlurredBg h3{
     top:20%;
     font-size: 30px;
-    
   }
+  
   .textWithBlurredBg h4{
     top:50%;
-    font-size: 20px;
-    
-  }
-  .textWithBlurredBg h5{
-    top:70%;
     font-size: 15px;
     
   }
+  .textWithBlurredBg h5{
+    top:60%;
+    font-size: 15px;
+    
+  }
+  .textWithBlurredBg h1{
+    top:80%;
+    font-size: 15px;
+    color: rgb(195, 200, 255)
+  }
+  
   h6, p { color: #fff9f9; }
   
   .textWithBlurredBg:hover :not(img){
